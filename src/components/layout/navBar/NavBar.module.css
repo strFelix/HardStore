@@ -1,8 +1,8 @@
 .navBar{
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .navBar h1{
     font-family: var(--logo-font);
-    font-size: 40px;
+    font-size: 30px;
 }
