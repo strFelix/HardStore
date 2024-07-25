@@ -1,8 +1,10 @@
-import Container from "./components/layout/Container";
+import NavBar from "./components/layout/navBar/NavBar";
 
 export function App() {
   return (
-    <Container/>
+    <>
+      <NavBar />
+    </>
   );
 }
 
