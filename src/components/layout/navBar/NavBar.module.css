@@ -7,6 +7,32 @@
     user-select: none;
 }
 
+
+/* CATEGORIES */
 .menuCategories{
     box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1);
 }
+
+.menuCategories li{
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--primary-slate);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.menuCategories li:last-child{
+    border-bottom: none;
+}
+
+.menuCategories li p{
+    transition: all 0.1s;
+    font-size: 14px;
+}
+
+.menuCategories li:hover p{
+    margin-left: 8px;
+}
+/* END CATEGORIES */
