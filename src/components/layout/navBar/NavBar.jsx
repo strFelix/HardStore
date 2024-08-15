@@ -12,12 +12,12 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={`${styles.navBar} bg-slate-900 ml-auto mr-auto flex justify-between items-center w-[90%]`}
+        className={`${styles.navBar} bg-slate-900 ml-auto mr-auto flex justify-between relative items-center w-[90%]`}
       >
-        <div onClick={handleMenuClick}>
+        <div onClick={handleMenuClick} className="ml-[3%]">
           <MenuButton />
         </div>
-        <h1 className="text-center text-white text-3xl">HardStore</h1>
+        <h1 className="absolute left-[50%] translate-x-[-50%] text-white text-3xl">HardStore</h1>
         <MenuIcons />
       </nav>
       {showMenu && (
