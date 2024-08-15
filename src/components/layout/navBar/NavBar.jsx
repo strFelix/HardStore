@@ -3,11 +3,16 @@ import styles from "./NavBar.module.css";
 import MenuButton from "./MenuButton";
 import MenuIcons from "./MenuIcons";
 import MenuCategories from "./MenuCategories";
+import MenuSearch from "./MenuSearch";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
+  };
+  const handleSearchClick = () => {
+    setShowSearch(!showSearch);
   };
   return (
     <>
@@ -18,10 +23,13 @@ const NavBar = () => {
           <MenuButton />
         </div>
         <h1 className="absolute left-[50%] translate-x-[-50%] text-white text-3xl">HardStore</h1>
-        <MenuIcons />
+        <MenuIcons handleSearchClick={handleSearchClick}/>
       </nav>
       {showMenu && (
         <MenuCategories />
+      )}
+      {showSearch && (
+        <MenuSearch />
       )}
     </>
   );
