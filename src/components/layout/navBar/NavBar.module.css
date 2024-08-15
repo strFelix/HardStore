@@ -4,7 +4,6 @@
 
 .navBar h1{
     font-family: var(--logo-font);
-    font-size: 30px;
     user-select: none;
 }
 
