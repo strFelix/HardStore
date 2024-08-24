@@ -1,0 +1,9 @@
+.half-screen{
+    width: 49.8%;
+    margin: 0.1%;
+}
+
+.full-screen{
+    width: 100%;
+    display: flex;
+}
